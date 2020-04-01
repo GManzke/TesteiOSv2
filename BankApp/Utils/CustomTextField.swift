@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import VMaskTextField
 
-class CustomTextField: UITextField {
+class CustomTextField: VMaskTextField{
     
     func validateTextField(type: ValidatorType) throws -> String{
         let validator = Validator.textFieldValidateType(type: type)

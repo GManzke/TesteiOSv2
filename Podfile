@@ -8,6 +8,7 @@ target 'BankApp' do
   # Pods for BankApp
 
 	pod 'Alamofire'
+	pod 'VMaskTextField'
 
   target 'BankAppTests' do
     inherit! :search_paths

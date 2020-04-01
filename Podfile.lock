@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (5.0.5)
+  - VMaskTextField (1.0.8)
 
 DEPENDENCIES:
   - Alamofire
+  - VMaskTextField
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - VMaskTextField
 
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  VMaskTextField: e77fe33633f999c5c38e70bed0afece0625624a4
 
-PODFILE CHECKSUM: b9c57dd0828cb4526da8736d087d533aaef3e19c
+PODFILE CHECKSUM: 93991af2b33a81af911973cc744512eec243edd7
 
 COCOAPODS: 1.9.1
