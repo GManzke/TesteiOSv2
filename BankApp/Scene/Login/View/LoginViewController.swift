@@ -10,47 +10,59 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    	
     // MARK: - Outlets
-    
-    
+
     @IBOutlet weak var userTextField: CustomTextField!
     @IBOutlet weak var passwordTextField: CustomTextField!
     @IBOutlet weak var loginButton: BorderedButton!
     
+    var interactor: LoginInteractorProtocol?
+    
+    // MARK: - LifeCycle
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        setup()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setup()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTextField()
-        
-        // Do any additional setup after loading the view.
-        
     }
     
     @IBAction func didTapLoginButton(_ sender: Any) {
         textFieldValidate()
-        
-        
     }
 }
 
-//MARK: - Private methods
-
-extension LoginViewController{
+extension LoginViewController {
     
-    private func setupTextField(){
+    // MARK: - Private methods
+    
+    private func setup() {
+        let controller = self
+        let interactor = LoginInteractor()
+        controller.interactor = interactor
+    }
+    
+    private func setupTextField() {
         userTextField.mask = "###.###.###-##"
         userTextField.delegate = self
         passwordTextField.isSecureTextEntry = true
         
     }
     
-    private func textFieldValidate(){
+    private func textFieldValidate() {
         
         do {
             let user = try userTextField.validateTextField(type: .user)
             let password = try passwordTextField.validateTextField(type: .password)
-            print("\(user) \(password)")
+            interactor?.getData(model: LoginModel(user: user, password: password))
             
         } catch let validatorError as ValidatorError {
             let alert = UIAlertController(title: "Ops...", message: validatorError.message, preferredStyle: .alert)
@@ -60,7 +72,6 @@ extension LoginViewController{
         } catch {
             print(error)
         }
-        
     }
 }
 

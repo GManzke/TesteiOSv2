@@ -151,7 +151,7 @@
 		200872412430254600180405 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				20087242243025BC00180405 /* LoginViewController.swift */,
+				2074B27924357A510056CAEB /* View */,
 				200872442430267700180405 /* LoginInteractor.swift */,
 				20087246243026A900180405 /* LoginPresenter.swift */,
 				200CF99924318B3C00749E58 /* LoginModel.swift */,
@@ -184,6 +184,14 @@
 				200CF9952431804700749E58 /* UserAccountModel.swift */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		2074B27924357A510056CAEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20087242243025BC00180405 /* LoginViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C846B1BD02FE3156B3143428 /* Pods */ = {
