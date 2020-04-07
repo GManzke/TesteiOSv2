@@ -14,10 +14,12 @@ protocol LoginInteractorProtocol {
 
 class LoginInteractor: LoginInteractorProtocol {
     
+    var presenter: LoginPresenterProtocol?
+    
     func getData(model: LoginModel) {
         
         BankAppAPI.requestLoginService(data: model) { response in
-            print(response.userAccount?.name)
+            self.presenter?.presentData(response.userAccount)
         }
     }
 }

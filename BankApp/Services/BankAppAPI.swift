@@ -25,7 +25,6 @@ class BankAppAPI: BankAppAPIProtocol{
                 if let data = response.data {
                     do {
                         let jsonData = try JSONDecoder().decode(UserAccountModel.self, from: data)
-                        print(jsonData)
                         callback(jsonData)
                     } catch {
                         print("Erro")

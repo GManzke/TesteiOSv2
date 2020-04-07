@@ -22,8 +22,16 @@
 		200CF9962431804700749E58 /* UserAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200CF9952431804700749E58 /* UserAccountModel.swift */; };
 		200CF99824318A0F00749E58 /* BankAppAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200CF99724318A0F00749E58 /* BankAppAPI.swift */; };
 		200CF99A24318B3C00749E58 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200CF99924318B3C00749E58 /* LoginModel.swift */; };
+		202DE40C243A89AA001E7616 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202DE40A243A89AA001E7616 /* HeaderTableViewCell.swift */; };
+		202DE40D243A89AA001E7616 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 202DE40B243A89AA001E7616 /* HeaderTableViewCell.xib */; };
+		202DE410243A89C3001E7616 /* StatementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202DE40E243A89C3001E7616 /* StatementsTableViewCell.swift */; };
+		202DE411243A89C3001E7616 /* StatementsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 202DE40F243A89C3001E7616 /* StatementsTableViewCell.xib */; };
 		203EC7D82432D55A000E3F6C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EC7D72432D55A000E3F6C /* Validator.swift */; };
 		203EC7DA2432E022000E3F6C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EC7D92432E022000E3F6C /* CustomTextField.swift */; };
+		206F99FE243CD5D800D82F86 /* StatementsViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206F99FD243CD5D800D82F86 /* StatementsViewController+Delegates.swift */; };
+		207A52EE243790FB0035AB27 /* LoginViewController+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A52ED243790FB0035AB27 /* LoginViewController+Protocols.swift */; };
+		207A52F024379F360035AB27 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A52EF24379F360035AB27 /* LoginRouter.swift */; };
+		20ABFA1C24397AA20056BF58 /* StatementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABFA1A24397AA20056BF58 /* StatementsViewController.swift */; };
 		260E7FDF5033CDB63FB9FD17 /* Pods_BankApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010D54D7CA55A5DD43D120B2 /* Pods_BankApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,8 +66,16 @@
 		200CF9952431804700749E58 /* UserAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountModel.swift; sourceTree = "<group>"; };
 		200CF99724318A0F00749E58 /* BankAppAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppAPI.swift; sourceTree = "<group>"; };
 		200CF99924318B3C00749E58 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		202DE40A243A89AA001E7616 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		202DE40B243A89AA001E7616 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		202DE40E243A89C3001E7616 /* StatementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsTableViewCell.swift; sourceTree = "<group>"; };
+		202DE40F243A89C3001E7616 /* StatementsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementsTableViewCell.xib; sourceTree = "<group>"; };
 		203EC7D72432D55A000E3F6C /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		203EC7D92432E022000E3F6C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		206F99FD243CD5D800D82F86 /* StatementsViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatementsViewController+Delegates.swift"; sourceTree = "<group>"; };
+		207A52ED243790FB0035AB27 /* LoginViewController+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Protocols.swift"; sourceTree = "<group>"; };
+		207A52EF24379F360035AB27 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		20ABFA1A24397AA20056BF58 /* StatementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsViewController.swift; sourceTree = "<group>"; };
 		3178A3A2C30753DA1DA74B09 /* Pods-BankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.release.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.release.xcconfig"; sourceTree = "<group>"; };
 		36B34E1C055BD8AA73B40D4C /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9F88BCAD8E944DC59581DC8E /* Pods-BankAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.release.xcconfig"; path = "Target Support Files/Pods-BankAppTests/Pods-BankAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +151,7 @@
 		2008723F243024F700180405 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				20ABFA1924397A640056BF58 /* Statements */,
 				200872412430254600180405 /* Login */,
 			);
 			path = Scene;
@@ -170,6 +187,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		200C834D243CD41E0045BE67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				202DE407243A88D6001E7616 /* CustomCells */,
+				20ABFA1A24397AA20056BF58 /* StatementsViewController.swift */,
+				206F99FD243CD5D800D82F86 /* StatementsViewController+Delegates.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		200CF99324317FF000749E58 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,12 +213,49 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		202DE407243A88D6001E7616 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				202DE409243A8954001E7616 /* HeaderCell */,
+				202DE408243A893E001E7616 /* StatementCell */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		202DE408243A893E001E7616 /* StatementCell */ = {
+			isa = PBXGroup;
+			children = (
+				202DE40E243A89C3001E7616 /* StatementsTableViewCell.swift */,
+				202DE40F243A89C3001E7616 /* StatementsTableViewCell.xib */,
+			);
+			path = StatementCell;
+			sourceTree = "<group>";
+		};
+		202DE409243A8954001E7616 /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				202DE40A243A89AA001E7616 /* HeaderTableViewCell.swift */,
+				202DE40B243A89AA001E7616 /* HeaderTableViewCell.xib */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
 		2074B27924357A510056CAEB /* View */ = {
 			isa = PBXGroup;
 			children = (
 				20087242243025BC00180405 /* LoginViewController.swift */,
+				207A52ED243790FB0035AB27 /* LoginViewController+Protocols.swift */,
+				207A52EF24379F360035AB27 /* LoginRouter.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		20ABFA1924397A640056BF58 /* Statements */ = {
+			isa = PBXGroup;
+			children = (
+				200C834D243CD41E0045BE67 /* View */,
+			);
+			path = Statements;
 			sourceTree = "<group>";
 		};
 		C846B1BD02FE3156B3143428 /* Pods */ = {
@@ -298,7 +362,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202DE40D243A89AA001E7616 /* HeaderTableViewCell.xib in Resources */,
 				2008722A24301F2500180405 /* LaunchScreen.storyboard in Resources */,
+				202DE411243A89C3001E7616 /* StatementsTableViewCell.xib in Resources */,
 				2008722724301F2500180405 /* Assets.xcassets in Resources */,
 				2008722524301F2300180405 /* Main.storyboard in Resources */,
 			);
@@ -382,9 +448,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202DE40C243A89AA001E7616 /* HeaderTableViewCell.swift in Sources */,
 				20087247243026A900180405 /* LoginPresenter.swift in Sources */,
 				200872452430267700180405 /* LoginInteractor.swift in Sources */,
+				202DE410243A89C3001E7616 /* StatementsTableViewCell.swift in Sources */,
 				200CF99824318A0F00749E58 /* BankAppAPI.swift in Sources */,
+				20ABFA1C24397AA20056BF58 /* StatementsViewController.swift in Sources */,
+				207A52EE243790FB0035AB27 /* LoginViewController+Protocols.swift in Sources */,
 				20087243243025BC00180405 /* LoginViewController.swift in Sources */,
 				2008721E24301F2300180405 /* AppDelegate.swift in Sources */,
 				203EC7D82432D55A000E3F6C /* Validator.swift in Sources */,
@@ -393,6 +463,8 @@
 				203EC7DA2432E022000E3F6C /* CustomTextField.swift in Sources */,
 				2008722024301F2300180405 /* SceneDelegate.swift in Sources */,
 				200CF9962431804700749E58 /* UserAccountModel.swift in Sources */,
+				206F99FE243CD5D800D82F86 /* StatementsViewController+Delegates.swift in Sources */,
+				207A52F024379F360035AB27 /* LoginRouter.swift in Sources */,
 				2008724C2430387D00180405 /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

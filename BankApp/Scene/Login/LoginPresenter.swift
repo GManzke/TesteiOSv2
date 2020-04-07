@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+protocol LoginPresenterProtocol {
+    func presentData(_ data: UserAccount?)
+        
+}
+
+class LoginPresenter: LoginPresenterProtocol {
+
+    var viewController: LoginViewControllerProtocol?
+    
+    func presentData(_ data: UserAccount?) {
+        viewController?.displayData(data)
+        
+    }
+    
+}

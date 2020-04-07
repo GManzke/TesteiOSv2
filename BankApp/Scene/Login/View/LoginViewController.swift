@@ -8,10 +8,13 @@
 
 import UIKit
 
+protocol LoginViewControllerProtocol {
+    func displayData(_ data: UserAccount?)
+}
+
 class LoginViewController: UIViewController {
     
     // MARK: - Outlets
-
     @IBOutlet weak var userTextField: CustomTextField!
     @IBOutlet weak var passwordTextField: CustomTextField!
     @IBOutlet weak var loginButton: BorderedButton!
@@ -41,13 +44,15 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController {
-    
     // MARK: - Private methods
     
     private func setup() {
         let controller = self
         let interactor = LoginInteractor()
+        let presenter = LoginPresenter()
         controller.interactor = interactor
+        interactor.presenter = presenter
+        presenter.viewController = controller
     }
     
     private func setupTextField() {
