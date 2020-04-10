@@ -9,22 +9,30 @@
 import Foundation
 import Alamofire
 
+protocol BaseRequest {
+    var url: String {get}
+    var parameters: Parameters {get}
+    var method: HTTPMethod {get}
+}
+
 protocol BankAppAPIProtocol{
-    static func requestLoginService(data: LoginModel, callback: @escaping (UserAccountModel) -> Void)
+    func requestLoginService<T:Codable>(data: BaseRequest, callback: @escaping (T) -> Void)
 }
 
 class BankAppAPI: BankAppAPIProtocol{
-    static func requestLoginService(data: LoginModel, callback: @escaping (UserAccountModel) -> Void) {
-        let url = "https://bank-app-test.herokuapp.com/api/login"
-        let params: Parameters = ["user": data.user,
-                                  "password": data.password]
+
+     func requestLoginService<T:Codable>(data: BaseRequest, callback: @escaping (T) -> Void) {
         
-        AF.request(url, method: .post, parameters: params).responseJSON { response in
+        guard let url = URL(string: data.url) else {return}
+        let params: Parameters = data.parameters
+        
+        AF.request(url, method: data.method, parameters: params).responseJSON { response in
+            
             switch response.result {
             case .success:
                 if let data = response.data {
                     do {
-                        let jsonData = try JSONDecoder().decode(UserAccountModel.self, from: data)
+                        let jsonData = try JSONDecoder().decode(T.self, from: data)
                         callback(jsonData)
                     } catch {
                         print("Erro")
@@ -32,6 +40,7 @@ class BankAppAPI: BankAppAPIProtocol{
                 }
             case .failure: break // TODO: Tratativa de erro
             }
+            
         }
     }
 }

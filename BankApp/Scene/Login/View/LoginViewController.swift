@@ -39,7 +39,12 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func didTapLoginButton(_ sender: Any) {
+        loginButton.isEnabled = false
         textFieldValidate()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        loginButton.isEnabled = true
     }
 }
 
@@ -74,6 +79,7 @@ extension LoginViewController {
             let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
             alert.addAction(action)
             self.present(alert, animated: true, completion: nil)
+            loginButton.isEnabled = true
         } catch {
             print(error)
         }

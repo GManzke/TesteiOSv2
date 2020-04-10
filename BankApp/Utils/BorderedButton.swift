@@ -17,10 +17,6 @@ class BorderedButton: UIButton{
         super.layoutSubviews()
         
         layer.cornerRadius = 4
-        layer.shadowColor = UIColor.beautifulBlue.cgColor
-        layer.shadowOffset.height = 2
-        layer.shadowRadius = 4
-        layer.shadowOpacity = 0.3
-        layer.masksToBounds = false
+        addShadow(color: .beautifulBlue)
     }
 }

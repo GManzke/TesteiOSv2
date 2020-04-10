@@ -9,7 +9,7 @@
 import Foundation
 
 protocol LoginPresenterProtocol {
-    func presentData(_ data: UserAccount?)
+    func presentData(data: UserAccount?)
         
 }
 
@@ -17,7 +17,7 @@ class LoginPresenter: LoginPresenterProtocol {
 
     var viewController: LoginViewControllerProtocol?
     
-    func presentData(_ data: UserAccount?) {
+    func presentData(data: UserAccount?) {
         viewController?.displayData(data)
         
     }

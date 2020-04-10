@@ -22,6 +22,7 @@
 		200CF9962431804700749E58 /* UserAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200CF9952431804700749E58 /* UserAccountModel.swift */; };
 		200CF99824318A0F00749E58 /* BankAppAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200CF99724318A0F00749E58 /* BankAppAPI.swift */; };
 		200CF99A24318B3C00749E58 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200CF99924318B3C00749E58 /* LoginModel.swift */; };
+		201556D9243D52060023C6BD /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201556D8243D52060023C6BD /* LoginRequest.swift */; };
 		202DE40C243A89AA001E7616 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202DE40A243A89AA001E7616 /* HeaderTableViewCell.swift */; };
 		202DE40D243A89AA001E7616 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 202DE40B243A89AA001E7616 /* HeaderTableViewCell.xib */; };
 		202DE410243A89C3001E7616 /* StatementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202DE40E243A89C3001E7616 /* StatementsTableViewCell.swift */; };
@@ -29,6 +30,8 @@
 		203EC7D82432D55A000E3F6C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EC7D72432D55A000E3F6C /* Validator.swift */; };
 		203EC7DA2432E022000E3F6C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EC7D92432E022000E3F6C /* CustomTextField.swift */; };
 		206F99FE243CD5D800D82F86 /* StatementsViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206F99FD243CD5D800D82F86 /* StatementsViewController+Delegates.swift */; };
+		207447C0243EA803006074A2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207447BF243EA803006074A2 /* UIViewExtensions.swift */; };
+		207447C2243EAE3E006074A2 /* StatementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207447C1243EAE3E006074A2 /* StatementsInteractor.swift */; };
 		207A52EE243790FB0035AB27 /* LoginViewController+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A52ED243790FB0035AB27 /* LoginViewController+Protocols.swift */; };
 		207A52F024379F360035AB27 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A52EF24379F360035AB27 /* LoginRouter.swift */; };
 		20ABFA1C24397AA20056BF58 /* StatementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABFA1A24397AA20056BF58 /* StatementsViewController.swift */; };
@@ -66,6 +69,7 @@
 		200CF9952431804700749E58 /* UserAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountModel.swift; sourceTree = "<group>"; };
 		200CF99724318A0F00749E58 /* BankAppAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppAPI.swift; sourceTree = "<group>"; };
 		200CF99924318B3C00749E58 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		201556D8243D52060023C6BD /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		202DE40A243A89AA001E7616 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		202DE40B243A89AA001E7616 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 		202DE40E243A89C3001E7616 /* StatementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsTableViewCell.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 		203EC7D72432D55A000E3F6C /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		203EC7D92432E022000E3F6C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		206F99FD243CD5D800D82F86 /* StatementsViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatementsViewController+Delegates.swift"; sourceTree = "<group>"; };
+		207447BF243EA803006074A2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		207447C1243EAE3E006074A2 /* StatementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsInteractor.swift; sourceTree = "<group>"; };
 		207A52ED243790FB0035AB27 /* LoginViewController+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Protocols.swift"; sourceTree = "<group>"; };
 		207A52EF24379F360035AB27 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		20ABFA1A24397AA20056BF58 /* StatementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 		200872412430254600180405 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				201556D7243D51F00023C6BD /* Repository */,
 				2074B27924357A510056CAEB /* View */,
 				200872442430267700180405 /* LoginInteractor.swift */,
 				20087246243026A900180405 /* LoginPresenter.swift */,
@@ -179,7 +186,7 @@
 		20087248243036B300180405 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				20087249243036C500180405 /* CustomColors.swift */,
+				207447BE243EA6BA006074A2 /* Extensions */,
 				2008724B2430387D00180405 /* BorderedButton.swift */,
 				203EC7D72432D55A000E3F6C /* Validator.swift */,
 				203EC7D92432E022000E3F6C /* CustomTextField.swift */,
@@ -213,6 +220,14 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		201556D7243D51F00023C6BD /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				201556D8243D52060023C6BD /* LoginRequest.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		202DE407243A88D6001E7616 /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +255,15 @@
 			path = HeaderCell;
 			sourceTree = "<group>";
 		};
+		207447BE243EA6BA006074A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20087249243036C500180405 /* CustomColors.swift */,
+				207447BF243EA803006074A2 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2074B27924357A510056CAEB /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				200C834D243CD41E0045BE67 /* View */,
+				207447C1243EAE3E006074A2 /* StatementsInteractor.swift */,
 			);
 			path = Statements;
 			sourceTree = "<group>";
@@ -450,9 +475,11 @@
 			files = (
 				202DE40C243A89AA001E7616 /* HeaderTableViewCell.swift in Sources */,
 				20087247243026A900180405 /* LoginPresenter.swift in Sources */,
+				201556D9243D52060023C6BD /* LoginRequest.swift in Sources */,
 				200872452430267700180405 /* LoginInteractor.swift in Sources */,
 				202DE410243A89C3001E7616 /* StatementsTableViewCell.swift in Sources */,
 				200CF99824318A0F00749E58 /* BankAppAPI.swift in Sources */,
+				207447C0243EA803006074A2 /* UIViewExtensions.swift in Sources */,
 				20ABFA1C24397AA20056BF58 /* StatementsViewController.swift in Sources */,
 				207A52EE243790FB0035AB27 /* LoginViewController+Protocols.swift in Sources */,
 				20087243243025BC00180405 /* LoginViewController.swift in Sources */,
@@ -460,6 +487,7 @@
 				203EC7D82432D55A000E3F6C /* Validator.swift in Sources */,
 				200CF99A24318B3C00749E58 /* LoginModel.swift in Sources */,
 				2008724A243036C500180405 /* CustomColors.swift in Sources */,
+				207447C2243EAE3E006074A2 /* StatementsInteractor.swift in Sources */,
 				203EC7DA2432E022000E3F6C /* CustomTextField.swift in Sources */,
 				2008722024301F2300180405 /* SceneDelegate.swift in Sources */,
 				200CF9962431804700749E58 /* UserAccountModel.swift in Sources */,
