@@ -15,14 +15,14 @@ protocol StatementsInteractorProtocol{
 
 class StatementsInteractor: StatementsInteractorProtocol {
     
-    var service: BankAppAPIProtocol = BankAppAPI?
+    var presenter: StatementsPresenterProtocol?
     
     func getStatements(userId: Int?) {
         guard let id = userId else {return}
         
         let request = StatementsRequest(userId: id)
-        service.requestLoginService(data: request) { (response: StatementsModel) in
-            <#code#>
+        BankAppAPI.requestLoginService(data: request) { (response: StatementsModel) in
+            self.presenter?.presentStatements(data: response.statementList)
         }
         
     }

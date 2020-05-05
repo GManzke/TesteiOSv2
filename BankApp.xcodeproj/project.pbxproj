@@ -34,7 +34,13 @@
 		207447C2243EAE3E006074A2 /* StatementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207447C1243EAE3E006074A2 /* StatementsInteractor.swift */; };
 		207A52EE243790FB0035AB27 /* LoginViewController+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A52ED243790FB0035AB27 /* LoginViewController+Protocols.swift */; };
 		207A52F024379F360035AB27 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A52EF24379F360035AB27 /* LoginRouter.swift */; };
+		209A5DAE2446101E005FAF8F /* StatementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A5DAD2446101E005FAF8F /* StatementsModel.swift */; };
+		209A5DB024461274005FAF8F /* StatementsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A5DAF24461274005FAF8F /* StatementsRequest.swift */; };
+		209A5DB224461707005FAF8F /* StatementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A5DB124461707005FAF8F /* StatementsPresenter.swift */; };
 		20ABFA1C24397AA20056BF58 /* StatementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABFA1A24397AA20056BF58 /* StatementsViewController.swift */; };
+		20BA5C82246224DC00EAC466 /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA5C81246224DC00EAC466 /* GenericError.swift */; };
+		20BA5C8424622B7700EAC466 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA5C8324622B7700EAC466 /* DoubleExtensions.swift */; };
+		20BA5C8624622BB700EAC466 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA5C8524622BB700EAC466 /* StringExtensions.swift */; };
 		260E7FDF5033CDB63FB9FD17 /* Pods_BankApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010D54D7CA55A5DD43D120B2 /* Pods_BankApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +87,13 @@
 		207447C1243EAE3E006074A2 /* StatementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsInteractor.swift; sourceTree = "<group>"; };
 		207A52ED243790FB0035AB27 /* LoginViewController+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Protocols.swift"; sourceTree = "<group>"; };
 		207A52EF24379F360035AB27 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		209A5DAD2446101E005FAF8F /* StatementsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsModel.swift; sourceTree = "<group>"; };
+		209A5DAF24461274005FAF8F /* StatementsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsRequest.swift; sourceTree = "<group>"; };
+		209A5DB124461707005FAF8F /* StatementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsPresenter.swift; sourceTree = "<group>"; };
 		20ABFA1A24397AA20056BF58 /* StatementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsViewController.swift; sourceTree = "<group>"; };
+		20BA5C81246224DC00EAC466 /* GenericError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericError.swift; sourceTree = "<group>"; };
+		20BA5C8324622B7700EAC466 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		20BA5C8524622BB700EAC466 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		3178A3A2C30753DA1DA74B09 /* Pods-BankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.release.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.release.xcconfig"; sourceTree = "<group>"; };
 		36B34E1C055BD8AA73B40D4C /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9F88BCAD8E944DC59581DC8E /* Pods-BankAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.release.xcconfig"; path = "Target Support Files/Pods-BankAppTests/Pods-BankAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +191,7 @@
 				200872442430267700180405 /* LoginInteractor.swift */,
 				20087246243026A900180405 /* LoginPresenter.swift */,
 				200CF99924318B3C00749E58 /* LoginModel.swift */,
+				207A52EF24379F360035AB27 /* LoginRouter.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -200,6 +213,7 @@
 				202DE407243A88D6001E7616 /* CustomCells */,
 				20ABFA1A24397AA20056BF58 /* StatementsViewController.swift */,
 				206F99FD243CD5D800D82F86 /* StatementsViewController+Delegates.swift */,
+				209A5DB124461707005FAF8F /* StatementsPresenter.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +221,8 @@
 		200CF99324317FF000749E58 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				20BA5C80246224B900EAC466 /* Error */,
+				209A5DAC2446100D005FAF8F /* Statements */,
 				200CF9942431801600749E58 /* Login */,
 			);
 			path = Models;
@@ -260,6 +276,8 @@
 			children = (
 				20087249243036C500180405 /* CustomColors.swift */,
 				207447BF243EA803006074A2 /* UIViewExtensions.swift */,
+				20BA5C8324622B7700EAC466 /* DoubleExtensions.swift */,
+				20BA5C8524622BB700EAC466 /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -269,18 +287,42 @@
 			children = (
 				20087242243025BC00180405 /* LoginViewController.swift */,
 				207A52ED243790FB0035AB27 /* LoginViewController+Protocols.swift */,
-				207A52EF24379F360035AB27 /* LoginRouter.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		209A5DAB24460F8C005FAF8F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				209A5DAF24461274005FAF8F /* StatementsRequest.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		209A5DAC2446100D005FAF8F /* Statements */ = {
+			isa = PBXGroup;
+			children = (
+				209A5DAD2446101E005FAF8F /* StatementsModel.swift */,
+			);
+			name = Statements;
 			sourceTree = "<group>";
 		};
 		20ABFA1924397A640056BF58 /* Statements */ = {
 			isa = PBXGroup;
 			children = (
+				209A5DAB24460F8C005FAF8F /* Repository */,
 				200C834D243CD41E0045BE67 /* View */,
 				207447C1243EAE3E006074A2 /* StatementsInteractor.swift */,
 			);
 			path = Statements;
+			sourceTree = "<group>";
+		};
+		20BA5C80246224B900EAC466 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				20BA5C81246224DC00EAC466 /* GenericError.swift */,
+			);
+			name = Error;
 			sourceTree = "<group>";
 		};
 		C846B1BD02FE3156B3143428 /* Pods */ = {
@@ -486,11 +528,17 @@
 				2008721E24301F2300180405 /* AppDelegate.swift in Sources */,
 				203EC7D82432D55A000E3F6C /* Validator.swift in Sources */,
 				200CF99A24318B3C00749E58 /* LoginModel.swift in Sources */,
+				20BA5C82246224DC00EAC466 /* GenericError.swift in Sources */,
 				2008724A243036C500180405 /* CustomColors.swift in Sources */,
 				207447C2243EAE3E006074A2 /* StatementsInteractor.swift in Sources */,
+				209A5DAE2446101E005FAF8F /* StatementsModel.swift in Sources */,
+				209A5DB024461274005FAF8F /* StatementsRequest.swift in Sources */,
 				203EC7DA2432E022000E3F6C /* CustomTextField.swift in Sources */,
 				2008722024301F2300180405 /* SceneDelegate.swift in Sources */,
 				200CF9962431804700749E58 /* UserAccountModel.swift in Sources */,
+				20BA5C8624622BB700EAC466 /* StringExtensions.swift in Sources */,
+				209A5DB224461707005FAF8F /* StatementsPresenter.swift in Sources */,
+				20BA5C8424622B7700EAC466 /* DoubleExtensions.swift in Sources */,
 				206F99FE243CD5D800D82F86 /* StatementsViewController+Delegates.swift in Sources */,
 				207A52F024379F360035AB27 /* LoginRouter.swift in Sources */,
 				2008724C2430387D00180405 /* BorderedButton.swift in Sources */,

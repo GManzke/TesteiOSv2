@@ -11,7 +11,7 @@ import Foundation
 struct UserAccountModel: Codable{
     
     var userAccount: UserAccount?
-    var error: ErrorAccount?
+    var error: GenericError?
 }
 
 struct UserAccount: Codable{
@@ -20,9 +20,4 @@ struct UserAccount: Codable{
     var name, bankAccount, agency: String?
     var balance: Double?
 }
-	
-struct ErrorAccount: Codable {
-    
-    var statusCode: Int?
-    var message: String?
-}
+

@@ -9,8 +9,17 @@
 import Foundation
 
 extension LoginViewController: LoginViewControllerProtocol {
+
     func displayData(_ data: UserAccount?) {
         LoginRouter.navigateToStatements(controller: self, data: data)
+    }
+    
+    func startLoading() {
+        
+    }
+    
+    func stopLoading() {
+        
     }
     
     

@@ -9,63 +9,95 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="StatementsTableViewCell" customModule="BankApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="328" height="104"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="KGk-i7-Jjw" customClass="StatementsTableViewCell" customModule="BankApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="131"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="328" height="104"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="131"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IRY-vl-mUo">
-                        <rect key="frame" x="0.0" y="0.0" width="328" height="96"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibV-bt-JPW">
+                        <rect key="frame" x="0.0" y="0.0" width="383" height="131"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bwa-sK-KU0">
-                                <rect key="frame" x="0.0" y="0.0" width="328" height="48"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IRY-vl-mUo">
+                                <rect key="frame" x="0.0" y="0.0" width="383" height="131"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pagamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8P-ZS-EOL">
-                                        <rect key="frame" x="16" y="14" width="87" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vba-Og-eHo">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="65.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pagamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lq-zc-6o8">
+                                                <rect key="frame" x="16" y="22.5" width="87" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/12/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0S0-Nw-3ud">
+                                                <rect key="frame" x="305" y="25.5" width="62" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="1Lq-zc-6o8" firstAttribute="leading" secondItem="Vba-Og-eHo" secondAttribute="leading" constant="16" id="0pM-lO-pAE"/>
+                                            <constraint firstItem="0S0-Nw-3ud" firstAttribute="centerY" secondItem="Vba-Og-eHo" secondAttribute="centerY" id="EzH-0o-3af"/>
+                                            <constraint firstAttribute="trailing" secondItem="0S0-Nw-3ud" secondAttribute="trailing" constant="16" id="KIR-UN-Ao4"/>
+                                            <constraint firstItem="1Lq-zc-6o8" firstAttribute="centerY" secondItem="Vba-Og-eHo" secondAttribute="centerY" id="LpX-gH-kZa"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bwa-sK-KU0">
+                                        <rect key="frame" x="0.0" y="65.5" width="383" height="65.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conta de luz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8P-ZS-EOL">
+                                                <rect key="frame" x="16" y="23" width="90" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$1.000,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0p-ur-wfT">
+                                                <rect key="frame" x="263" y="21" width="104" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="x0p-ur-wfT" secondAttribute="trailing" constant="16" id="8B5-06-56X"/>
+                                            <constraint firstItem="x0p-ur-wfT" firstAttribute="centerY" secondItem="Bwa-sK-KU0" secondAttribute="centerY" id="8Hk-zg-UHI"/>
+                                            <constraint firstItem="v8P-ZS-EOL" firstAttribute="centerY" secondItem="Bwa-sK-KU0" secondAttribute="centerY" id="IVu-B3-Ne6"/>
+                                            <constraint firstItem="v8P-ZS-EOL" firstAttribute="leading" secondItem="Bwa-sK-KU0" secondAttribute="leading" constant="16" id="l1X-RT-aaF"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstItem="v8P-ZS-EOL" firstAttribute="leading" secondItem="Bwa-sK-KU0" secondAttribute="leading" constant="16" id="GJ2-0q-BAy"/>
-                                    <constraint firstItem="v8P-ZS-EOL" firstAttribute="centerY" secondItem="Bwa-sK-KU0" secondAttribute="centerY" id="sjL-9O-jPq"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLa-Uz-psB">
-                                <rect key="frame" x="0.0" y="48" width="328" height="48"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conta de luz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCx-Tn-aCr">
-                                        <rect key="frame" x="16" y="14" width="96.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstItem="fCx-Tn-aCr" firstAttribute="centerY" secondItem="fLa-Uz-psB" secondAttribute="centerY" id="acD-bu-UAu"/>
-                                    <constraint firstItem="fCx-Tn-aCr" firstAttribute="leading" secondItem="fLa-Uz-psB" secondAttribute="leading" constant="16" id="v4n-9q-gIX"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="96" id="8CE-lY-Q2o"/>
+                            <constraint firstItem="IRY-vl-mUo" firstAttribute="leading" secondItem="ibV-bt-JPW" secondAttribute="leading" id="bIQ-Ak-4uy"/>
+                            <constraint firstAttribute="trailing" secondItem="IRY-vl-mUo" secondAttribute="trailing" id="hcd-JZ-KRP"/>
+                            <constraint firstItem="IRY-vl-mUo" firstAttribute="top" secondItem="ibV-bt-JPW" secondAttribute="top" id="oKf-qU-ZBd"/>
+                            <constraint firstAttribute="bottom" secondItem="IRY-vl-mUo" secondAttribute="bottom" id="rZX-Jq-wfj"/>
                         </constraints>
-                    </stackView>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="IRY-vl-mUo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dde-nv-9qz"/>
-                    <constraint firstAttribute="bottom" secondItem="IRY-vl-mUo" secondAttribute="bottom" id="Fz5-fW-Myr"/>
-                    <constraint firstItem="IRY-vl-mUo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="G6o-WQ-vxZ"/>
-                    <constraint firstAttribute="trailing" secondItem="IRY-vl-mUo" secondAttribute="trailing" id="ccx-SF-8KN"/>
+                    <constraint firstAttribute="bottom" secondItem="ibV-bt-JPW" secondAttribute="bottom" id="0Yl-G6-Whe"/>
+                    <constraint firstItem="ibV-bt-JPW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0ky-nD-cUZ"/>
+                    <constraint firstAttribute="trailing" secondItem="ibV-bt-JPW" secondAttribute="trailing" id="d2n-0v-TsW"/>
+                    <constraint firstItem="ibV-bt-JPW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="up1-OI-jhZ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="131.8840579710145" y="173.4375"/>
+            <connections>
+                <outlet property="backgroundCardView" destination="ibV-bt-JPW" id="X6F-ch-lEJ"/>
+                <outlet property="dateLabel" destination="0S0-Nw-3ud" id="Ccw-i9-l5X"/>
+                <outlet property="descLabel" destination="v8P-ZS-EOL" id="bUC-5d-em7"/>
+                <outlet property="titleLabel" destination="1Lq-zc-6o8" id="VQv-e1-kGP"/>
+                <outlet property="valueLabel" destination="x0p-ur-wfT" id="Npd-pJ-hZ7"/>
+            </connections>
+            <point key="canvasLocation" x="10.869565217391305" y="180.46875"/>
         </tableViewCell>
     </objects>
 </document>

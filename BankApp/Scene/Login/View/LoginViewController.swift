@@ -8,7 +8,12 @@
 
 import UIKit
 
-protocol LoginViewControllerProtocol {
+protocol LoadingProtocol {
+    func startLoading()
+    func stopLoading()
+}
+
+protocol LoginViewControllerProtocol: LoadingProtocol {
     func displayData(_ data: UserAccount?)
 }
 

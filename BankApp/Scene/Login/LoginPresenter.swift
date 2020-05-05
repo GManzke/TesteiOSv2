@@ -22,4 +22,11 @@ class LoginPresenter: LoginPresenterProtocol {
         
     }
     
+    func startLoading() {
+        viewController?.startLoading()
+    }
+    func stopLoading() {
+        viewController?.stopLoading()
+    }
+    
 }

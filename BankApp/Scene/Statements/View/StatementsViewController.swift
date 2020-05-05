@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol StatementsViewControllerProtocol {
+    func showData(data: [StatementList])
+}
+
 class StatementsViewController: UIViewController {
     
     

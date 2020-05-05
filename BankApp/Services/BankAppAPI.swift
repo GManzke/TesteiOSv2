@@ -16,12 +16,12 @@ protocol BaseRequest {
 }
 
 protocol BankAppAPIProtocol{
-    func requestLoginService<T:Codable>(data: BaseRequest, callback: @escaping (T) -> Void)
+    static func requestLoginService<T:Codable>(data: BaseRequest, callback: @escaping (T) -> Void)
 }
 
 class BankAppAPI: BankAppAPIProtocol{
 
-     func requestLoginService<T:Codable>(data: BaseRequest, callback: @escaping (T) -> Void) {
+     static func requestLoginService<T:Codable>(data: BaseRequest, callback: @escaping (T) -> Void) {
         
         guard let url = URL(string: data.url) else {return}
         let params: Parameters = data.parameters
